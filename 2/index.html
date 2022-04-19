@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="istyle.css">
+</head>
+<body>
+   <form action="#" class="form" method="post">
+
+	<div class="form__field">
+		<input type="email" name="name" id="email" placeholder="E-Mail" required/>
+		<span class="error__email hidden">Это поле должно содержать E-Mail в формате example@site.com</span>
+	</div>
+	<div class="form__field">
+		<input type="tel" name="name" id="phone" placeholder="Телефон" minlength="11" maxlength="18" required/>
+		<span class="error__phone hidden">Это поле должно содержать номер телефона (от 11 до 18 цифр) </span>
+	</div>
+	<div class="form__field">
+		<textarea id="comment" placeholder="Ваш комментарий" style="width: 478px; height: 135px; padding: 10px;"></textarea>
+
+	</div>
+	<button class="button" type="submit" onClick="validE(); validP();">Отправить</button>
+</form>
+<script src="imain.js"></script>
+</body>
+</html>
