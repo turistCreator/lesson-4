@@ -7,7 +7,6 @@
     <title>Homework</title>
 </head>
 <body> 
-    <!-- текст взял у вас -->
     <p id="Text">
         One:'Hi Mary.' Two:'Oh, hi.'
         One:'How are you doing?'
@@ -26,5 +25,11 @@
         Two:'I'll see you next time.'
         One:'Sure.' Bye.'</p>
     <button id="change">Change</button>
+    <script>
+        let text2 = document.getElementById('text'); 
+        document.getElementById('change').addEventListener('click', () => {
+            text2.textContent = text2.textContent.replace(/\B'|'\B/g, '"');
+        });
+    </script>
 </body>
 </html>
